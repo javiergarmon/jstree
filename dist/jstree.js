@@ -5,7 +5,7 @@
 		define(['jquery'], factory);
 	}
 	else if(typeof module !== 'undefined' && module.exports) {
-		module.exports = factory( typeof jQuery === 'undefined ? require('jquery') : jQuery );
+		module.exports = factory( typeof jQuery === 'undefined' ? require('jquery') : jQuery );
 	}
 	else {
 		factory(jQuery);
